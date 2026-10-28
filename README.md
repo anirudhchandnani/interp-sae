@@ -32,6 +32,9 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Activation capture: pull residual-stream and MLP activations from each block of a
   small GPT2-style model using forward hooks, for a batch of prompts, returned as
   per-layer tensors.
+- Sparse autoencoder: a tied-bias relu model that encodes an activation into
+  non-negative feature activations and reconstructs it, with recon, l1, and total
+  losses ready for a training loop.
 
 ## Roadmap
 
