@@ -35,10 +35,12 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Sparse autoencoder: a tied-bias relu model that encodes an activation into
   non-negative feature activations and reconstructs it, with recon, l1, and total
   losses ready for a training loop.
+- Linear probes: fit a logistic regression on activations to read off a binary
+  concept and recover its direction in activation space, with accuracy and
+  probability readouts.
 
 ## Roadmap
 
 - Sparse autoencoder training on captured activations
-- Linear probes for concept directions
 - Activation steering at inference time
 - A viewer to browse features, probes, and steering effects
