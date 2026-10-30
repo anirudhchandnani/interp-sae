@@ -38,9 +38,11 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Linear probes: fit a logistic regression on activations to read off a binary
   concept and recover its direction in activation space, with accuracy and
   probability readouts.
+- Activation steering: add a scaled direction into the residual stream at a chosen
+  block during a forward pass, and project activations onto a direction to monitor
+  its presence.
 
 ## Roadmap
 
 - Sparse autoencoder training on captured activations
-- Activation steering at inference time
 - A viewer to browse features, probes, and steering effects

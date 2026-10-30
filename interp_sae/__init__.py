@@ -1,6 +1,7 @@
 from .capture import load_model, capture_activations, capture_from_text
 from .sae import SparseAutoencoder
 from .probe import LinearProbe
+from .steer import steer, project
 
 __all__ = [
     "load_model",
@@ -8,4 +9,6 @@ __all__ = [
     "capture_from_text",
     "SparseAutoencoder",
     "LinearProbe",
+    "steer",
+    "project",
 ]
