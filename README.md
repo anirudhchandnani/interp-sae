@@ -41,6 +41,9 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Activation steering: add a scaled direction into the residual stream at a chosen
   block during a forward pass, and project activations onto a direction to monitor
   its presence.
+- Dose calibration and dose ramps: sweep steering coefficients and pick the
+  strongest one that keeps generation coherent, and vary the coefficient across
+  generation steps with a per-step schedule.
 
 ## Roadmap
 
