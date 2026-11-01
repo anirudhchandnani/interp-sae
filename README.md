@@ -44,8 +44,9 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Dose calibration and dose ramps: sweep steering coefficients and pick the
   strongest one that keeps generation coherent, and vary the coefficient across
   generation steps with a per-step schedule.
+- Sparse autoencoder training: flatten captured activations into per-token rows
+  and fit the autoencoder with a minibatch Adam loop over its total loss.
 
 ## Roadmap
 
-- Sparse autoencoder training on captured activations
 - A viewer to browse features, probes, and steering effects

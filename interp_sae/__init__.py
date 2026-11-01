@@ -3,6 +3,7 @@ from .sae import SparseAutoencoder
 from .probe import LinearProbe
 from .steer import steer, ramp, project
 from .calibrate import strength, coherence, calibrate
+from .train import flatten_activations, train_sae, train_on_model
 
 __all__ = [
     "load_model",
@@ -16,4 +17,7 @@ __all__ = [
     "strength",
     "coherence",
     "calibrate",
+    "flatten_activations",
+    "train_sae",
+    "train_on_model",
 ]
