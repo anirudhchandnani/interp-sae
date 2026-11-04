@@ -46,7 +46,10 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
   generation steps with a per-step schedule.
 - Sparse autoencoder training: flatten captured activations into per-token rows
   and fit the autoencoder with a minibatch Adam loop over its total loss.
+- Browsing and export layer: gather the top activating tokens for a feature,
+  per-feature activation frequency and mean, and short steering continuations, and
+  assemble them into a single JSON report that saves and loads for later browsing.
 
 ## Roadmap
 
-- A viewer to browse features, probes, and steering effects
+- A viewer to browse the exported report
