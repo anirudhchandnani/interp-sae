@@ -49,7 +49,15 @@ print(acts["resid"].shape)  # (layers, batch, sequence, hidden)
 - Browsing and export layer: gather the top activating tokens for a feature,
   per-feature activation frequency and mean, and short steering continuations, and
   assemble them into a single JSON report that saves and loads for later browsing.
+- Report viewer: a small Streamlit app that loads a saved report and browses its
+  feature statistics, top activating tokens per feature, and steering examples.
 
-## Roadmap
+Run the viewer:
 
-- A viewer to browse the exported report
+```
+uv run streamlit run app.py
+```
+
+## Possible next steps
+
+- Compare two reports side by side to see how features shift between runs.
