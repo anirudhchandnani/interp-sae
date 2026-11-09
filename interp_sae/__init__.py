@@ -12,6 +12,7 @@ from .report import (
     save_report,
     load_report,
 )
+from .display import feature_rows, token_rows, steering_rows, feature_ids
 
 __all__ = [
     "load_model",
@@ -34,4 +35,8 @@ __all__ = [
     "build_report",
     "save_report",
     "load_report",
+    "feature_rows",
+    "token_rows",
+    "steering_rows",
+    "feature_ids",
 ]
